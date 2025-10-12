@@ -1,6 +1,8 @@
 import random
 def hangman():
-    words = [{"word": "apple", "spaces": "_ _ _ _ _", "difficulty": "easy"},{"word": "dream", "spaces": "_ _ _ _ _", "difficulty": "easy"}, {"word": "independence", "spaces": "_ _ _ _ _ _ _ _ _ _ _ _", "difficulty": "hard"}]
+    words = [{"word": "apple", "spaces": "_ _ _ _ _", "difficulty": "easy"},
+             {"word": "dream", "spaces": "_ _ _ _ _", "difficulty": "easy"}, 
+             {"word": "independence", "spaces": "_ _ _ _ _ _ _ _ _ _ _ _", "difficulty": "hard"}]
     score = 0
     # immediate below line must be altered for bigger project
     incomplete = [0, 1, 2]
@@ -39,20 +41,6 @@ def hangman():
             print(f"Word: {words[randomise]["word"]}\nGuess: {words[randomise]["spaces"]}\nScore: {score}")
             print("------------------------\n\n")
 
-
-
-
-
-
-
-                
-
-            
-            
-                
-
-
-
-
 print(hangman())
+
 

@@ -1,5 +1,6 @@
 import random
 import os
+os.system('mode con: cols=100 lines=30')
 def hangman():
     # list of words
     words = [{"word": "apple", "spaces": "_ _ _ _ _", "difficulty": "easy","hint": "A fruit"},
@@ -174,4 +175,5 @@ def hangman():
         breaker = input("Continue [press enter]: ")
 # function run
 print(hangman())
+
 

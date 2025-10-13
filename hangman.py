@@ -57,11 +57,11 @@ def hangman():
             # no lines before os.system clear
             # guessing
             os.system("cls")
-            print("="*156)
+            print("="*180)
             print(("Hangman Project\n").center(164))
             print((f"Score: {score}").center(164))
             won = False
-            print("="*156)
+            print("="*180)
             print("\n")
             print("Tries: ",end="")
             for _ in range(tries):
@@ -174,4 +174,5 @@ def hangman():
         breaker = input("Continue [press enter]: ")
 # function run
 print(hangman())
+
 

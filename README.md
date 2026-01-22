@@ -1,4 +1,4 @@
-# Hangman Project
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/92f43760-fa4d-4401-8cc0-468d46342219" /># Hangman Project
 
 A simple command-line classic Hangman game — built entirely in Python and played in the terminal.  
 Includes a score, hints, difficulty of words, and more.
@@ -8,12 +8,16 @@ Includes a score, hints, difficulty of words, and more.
 - **Scoring system** based on accuracy and remaining attempts
 - **Number of attempts** or "tries", based on the word's difficulty
 - **Buy attempts** if you run out of attempts, with points
-- 
+- **Sound effects** for winning, losing, etc
+
+
 ## Game
 
-Game screen:
+Home screen:
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/9f1d9261-a527-4639-9379-979f5a4231de" />
 
-<img width="1892" height="905" alt="image" src="https://github.com/user-attachments/assets/945b83e7-27d5-4254-a118-b7648d06fc77" />
+Game screen:
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/4c2dfb34-5d01-40bc-adcb-e83af16d5285" />
 
 
 

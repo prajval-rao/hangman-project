@@ -1,43 +1,41 @@
 import random
 import os
+import pygame
+import time
+pygame.init() 
 def hangman():
     # list of words
-    words = [{"word": "apple", "spaces": "_ _ _ _ _", "difficulty": "easy","hint": "A fruit"},
-    {"word": "dream", "spaces": "_ _ _ _ _", "difficulty": "easy","hint": "During sleep"}, 
-    {"word": "independence", "spaces": "_ _ _ _ _ _ _ _ _ _ _ _", "difficulty": "hard"},
-    {"word": "orange", "spaces": "_ _ _ _ _ _", "difficulty": "easy","hint": "A fruit"},
-    {"word": "python", "spaces": "_ _ _ _ _ _", "difficulty": "easy", "hint": "A programming language"},
-    {"word": "elephant", "spaces": "_ _ _ _ _ _ _ _", "difficulty": "medium", "hint": "An animal"},
-    {"word": "architecture", "spaces": "_ _ _ _ _ _ _ _ _ _ _ _", "difficulty": "hard", "hint": "An art of science of designing"},
-    {"word": "guitar", "spaces": "_ _ _ _ _ _", "difficulty": "medium","hint": "A musical instrument"},
-    {"word": "democracy", "spaces": "_ _ _ _ _ _ _ _ _", "difficulty": "medium", "hint": "A form of government"},
-    {"word": "banana", "spaces": "_ _ _ _ _ _", "difficulty": "easy", "hint": "A fruit"},
-    {"word": "mountain", "spaces": "_ _ _ _ _ _ _ _", "difficulty": "medium", "hint": "A natural elevation"},
-    {"word": "philosophy", "spaces": "_ _ _ _ _ _ _ _ _ _", "difficulty": "hard", "hint": "A field of study"},
-    {"word": "ocean", "spaces": "_ _ _ _ _", "difficulty": "easy", "hint": "A body of water"},
-    {"word": "pyramid", "spaces": "_ _ _ _ _ _ _", "difficulty": "medium", "hint": "Something famous in Egypt"},
-    {"word": "jupiter", "spaces": "_ _ _ _ _ _ _", "difficulty": "medium", "hint": "Largest planet in our solar system"},
-    {"word": "kangaroo", "spaces": "_ _ _ _ _ _ _ _", "difficulty": "medium", "hint": "Marsupial animal famous for hopping in Australia"},
-    {"word": "avocado", "spaces": "_ _ _ _ _ _ _", "difficulty": "easy", "hint": "Green fruit often used in guacamole"},
-    {"word": "volcano", "spaces": "_ _ _ _ _ _ _", "difficulty": "medium", "hint": "Mountain that erupts molten lava"},
-    {"word": "himalayas", "spaces": "_ _ _ _ _ _ _ _ _", "difficulty": "hard", "hint": "Mountain range home to Mount Everest"},
-    {"word": "pneumonia", "spaces": "_ _ _ _ _ _ _ _ _", "difficulty": "hard", "hint": "A serious lung infection"},
-    {"word": "chocolate", "spaces": "_ _ _ _ _ _ _ _ _", "difficulty": "easy", "hint": "Sweet treat made from cocoa"},
-    {"word": "sphinx", "spaces": "_ _ _ _ _ _", "difficulty": "hard", "hint": "Ancient Egyptian statue with a lion's body and human head"},
-    {"word": "microsoft", "spaces": "_ _ _ _ _ _ _ _ _", "difficulty": "easy", "hint": "American software company"},
-    {"word": "rainbow", "spaces": "_ _ _ _ _ _ _", "difficulty": "easy", "hint": "Colours that appear in the sky after rain"},
-    {"word": "astronomy", "spaces": "_ _ _ _ _ _ _ _ _", "difficulty": "medium", "hint": "The scientific study of celestial objects"},
-    {"word": "telescope", "spaces": "_ _ _ _ _ _ _ _ _", "difficulty": "medium", "hint": "Instrument used to view distant stars and planets"},
-    {"word": "butterfly", "spaces": "_ _ _ _ _ _ _ _ _", "difficulty": "easy", "hint": "Insect with colourful wings that flies"},
-    {"word": "avalanche", "spaces": "_ _ _ _ _ _ _ _ _", "difficulty": "hard", "hint": "Mass of snow sliding rapidly down a mountain"},
-    {"word": "trolley", "spaces": "_ _ _ _ _ _ _", "difficulty": "medium", "hint": "Something found in a supermarket"},
-    {"word": "marathon", "spaces": "_ _ _ _ _ _ _ _", "difficulty": "medium", "hint": "A long-distance running race"}
-    ]
+    words = []
+    with open("words.txt", "r", encoding="utf-8") as f:
+        for line in f:
+            spaces = " "
+            if not line.strip():
+                continue
+            word, difficulty, hint = [x.strip() for x in line.split("|", 2)]
+            spaces = "_ "*len(word)
+            words.append({"word": word, "spaces": spaces, "difficulty": difficulty, "hint": hint})
     score = 5
     available_words = []
     # immediate below line must be altered for bigger project
     for i in range(len(words)):
         available_words.append(i)
+    pygame.mixer.music.load(r"C:\Users\theof\OneDrive\Documents\Python Projects & Files\Hangman\ROBLOX Music - Alice Deejay - Better Off Alone (Glejs Remix).mp3")
+    pygame.mixer.music.play()
+    os.system("cls")
+    print("\n")
+
+    print(("██╗░░██╗░█████╗░███╗░░██╗░██████╗░███╗░░░███╗░█████╗░███╗░░██╗").center(160))
+    print(("██║░░██║██╔══██╗████╗░██║██╔════╝░████╗░████║██╔══██╗████╗░██║").center(160)) 
+    print(("███████║███████║██╔██╗██║██║░░██╗░██╔████╔██║███████║██╔██╗██║").center(160))
+    print(("██╔══██║██╔══██║██║╚████║██║░░╚██╗██║╚██╔╝██║██╔══██║██║╚████║").center(160))
+    print(("██║░░██║██║░░██║██║░╚███║╚██████╔╝██║░╚═╝░██║██║░░██║██║░╚███║").center(160))
+    print(("╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░╚═╝░░░░░╚═╝╚═╝░░╚═╝╚═╝░░╚══╝").center(160))
+
+    print("\n")
+    print(("Press [ENTER] to continue: ").center(160))
+    breaker = input(("").center(160))
+    pygame.mixer.music.pause()
+
     while available_words:
         hintUsed = False
         untried = [
@@ -53,61 +51,68 @@ def hangman():
             tries = 7
         else:
             tries = 6
+        pygame.mixer.music.load(r"C:\Users\theof\OneDrive\Documents\Python Projects & Files\Hangman\game-entrance.mp3")
+        pygame.mixer.music.play()
         while tries != 0:
             # no lines before os.system clear
             # guessing
             os.system("cls")
-            print("="*156)
-            print(("Hangman Project\n").center(164))
-            print((f"Score: {score}").center(164))
+            print(("Hangman project").center(160))
+            print("")
+            print((f"𝗦𝗰𝗼𝗿𝗲: {score}").center(160))
             won = False
-            print("="*156)
+            print("  " + '\u2500' * 154)
             print("\n")
-            print("Tries: ",end="")
+            print("  Tries: ",end="")
             for _ in range(tries):
                 print("🞸 ",end="")
             print("\n")
-            print(f"Difficulty: {words[randomise]["difficulty"].title()}")
+            print(f"  Difficulty: {words[randomise]["difficulty"].title()}")
             print("\n")
-            print(("Untried:").center(164))
-            print((", ".join(untried)).center(164))
+            print(("Untried:").center(160))
+            print((", ".join(untried)).center(160))
             print("\n\n")
-            print(("Already tried: ").center(164))
-            print((", ".join(checked)).center(164))
+            print((" Already tried: ").center(160))
+            print((", ".join(checked)).center(160))
             print("\n\n")
             if hintUsed == True:
-                print((f"Hint: {words[randomise]["hint"]}").center(164))
+                print((f"Hint: {words[randomise]["hint"]}").center(160))
                 print("\n")
-            print(("Guess!").center(164))
+            print(("Guess!").center(160))
             print("\n")
-            print((words[randomise]["spaces"]).center(164))
+            print((words[randomise]["spaces"]).center(160))
             print("\n")
             # letter input
-            print(("Enter any letter or type 'hint' for hint: ").center(164))
+            print(("Enter any letter or type 'hint' for hint: ").center(160))
             print("\n")
-            print(" "*81,end="")
+            print(" "*79,end="")
             letter = input("")
             if letter != "hint" and len(letter) != 1:
-                print(("Invalid input [Press ENTER]").center(164))
                 print("\n")
-                print(" "*81,end="")
+                print(("Invalid input (only one letter at a time!) [Press ENTER]").center(160))
+                print("\n")
+                print(" "*79,end="")
                 breaker = input((""))
                 continue
             letter = letter.lower()
             # hint
             if letter == "hint":
+                pygame.mixer.music.load(r"C:\Users\theof\OneDrive\Documents\Python Projects & Files\Hangman\warning.mp3")
+                pygame.mixer.music.play()
                 if hintUsed == True:
-                    breaker = input(("Already used hint! ").center(164))
+                    breaker = input(("Already used hint! ").center(160))
                     continue
                 if score >= 2:
                     hintConfirm = input("\nAre you sure you want to use your hint? (-3 score, you only win 4 points (instead of 5 points) if you are correct) (Y/N): ")
                     if hintConfirm.lower() == "y":
+                        pygame.mixer.music.load(r"C:\Users\theof\OneDrive\Documents\Python Projects & Files\Hangman\hint-claim.mp3")
+                        pygame.mixer.music.play()
                         score -= 3
                         os.system("cls")
-                        print((f"Score: {score}").center(164))
+                        print((f"Score: {score}").center(160))
                         hintUsed = True
-                        print((f"Hint: {words[randomise]["hint"]}").center(164))
-                        print("Continue: [enter]".center(164))
+                        print((f"Hint: {words[randomise]["hint"]}").center(160))
+                        print("Continue: [enter]".center(160))
                         print(" "*81,end="")
                         breaker = input((""))
                         continue
@@ -118,10 +123,12 @@ def hangman():
                     continue
             # already tried letters
             if letter in checked:
+                pygame.mixer.music.load(r"C:\Users\theof\OneDrive\Documents\Python Projects & Files\Hangman\new-notification-026-380249.mp3")
+                pygame.mixer.music.play()
                 print("\n")
-                print(("Already tried.").center(164))
+                print(("Already tried.").center(160))
                 print(" "*81,end="")
-                breaker=input(("").center(164))
+                breaker=input(("").center(160))
                 print("\n")
                 continue
             # establishing that letter is now tried
@@ -129,6 +136,8 @@ def hangman():
             checked.append(letter)
             # check if letter in word
             if letter in words[randomise]["word"]:
+                pygame.mixer.music.load(r"C:\Users\theof\OneDrive\Documents\Python Projects & Files\Hangman\mouse-click-405459.mp3")
+                pygame.mixer.music.play()
                 for j in range(len(words[randomise]["word"])):
                     if words[randomise]["word"][j] == letter:
                         words[randomise]["spaces"] = words[randomise]["spaces"][:j*2] + letter + words[randomise]["spaces"][j*2+1:]
@@ -136,22 +145,29 @@ def hangman():
                     if "_" not in words[randomise]["spaces"]:
                         os.system("cls")
                         print("\n\n")
-                        print(("------------------------").center(164))
-                        print((words[randomise]["spaces"]).center(164))
-                        print(("You found the word!").center(164))
+                        print(('\u2500'*24).center(160))
+                        print((words[randomise]["spaces"]).center(160))
+                        print(("You found the word!").center(160))
+                        pygame.mixer.music.load(r"C:\Users\theof\OneDrive\Documents\Python Projects & Files\Hangman\level-win-6416.mp3")
+                        pygame.mixer.music.play()
                         won = True
                         if hintUsed == True:
                             score += 4
                         else:
                             score += 5
-                        print((f"Score: {score}").center(164))
-                        print(("------------------------").center(164))
+                        print((f"Score: {score}").center(160))
+                        print(('\u2500'*24).center(160))
                         break
             else:
+                pygame.mixer.music.load(r"C:\Users\theof\OneDrive\Documents\Python Projects & Files\Hangman\wrong-47985.mp3")
+                pygame.mixer.music.play()
                 tries -= 1
             # 3 more wrong tries for 5 points
             if score >= 5 and tries == 0:
                 os.system("cls")
+                time.sleep(0.5)
+                pygame.mixer.music.load(r"C:\Users\theof\OneDrive\Documents\Python Projects & Files\Hangman\warning.mp3")
+                pygame.mixer.music.play()
                 option = input("You can buy 3 more wrong tries for 5 points. Try? (Y/N) ")
                 if option.lower() == "y":
                     tries += 3
@@ -162,18 +178,18 @@ def hangman():
         if won == False:
             os.system("cls")
             print("\n\n")
-            print(("--------------------------------").center(164))
-            print(("You have lost. ").center(164))
-            print((f"Word: {words[randomise]["word"]}").center(164))
+            print(('\u2500'*32).center(160))
+            pygame.mixer.music.load(r"C:\Users\theof\OneDrive\Documents\Python Projects & Files\Hangman\lose-sfx-365579.mp3")
+            pygame.mixer.music.play()
+            print(("You have lost. ").center(160))
+            print((f"Word: {words[randomise]["word"]}").center(160))
             print("\n")
-            print((f"Guess: {words[randomise]["spaces"]}").center(164))
+            print((f"Guess: {words[randomise]["spaces"]}").center(160))
             print("\n")
-            print((f"Score: {score}").center(164))
-            print(("--------------------------------").center(164))
+            print((f"Score: {score}").center(160))
+            print(('\u2500'*32).center(160))
             print("\n\n")
         breaker = input("Continue [press enter]: ")
 # function run
 print(hangman())
-
-
 

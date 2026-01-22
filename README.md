@@ -14,9 +14,11 @@ Includes a score, hints, difficulty of words, and more.
 ## Game
 
 Home screen:
+
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/9f1d9261-a527-4639-9379-979f5a4231de" />
 
 Game screen:
+
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/4c2dfb34-5d01-40bc-adcb-e83af16d5285" />
 
 

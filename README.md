@@ -1,4 +1,4 @@
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/92f43760-fa4d-4401-8cc0-468d46342219" /># Hangman Project
+# Hangman Project
 
 A simple command-line classic Hangman game — built entirely in Python and played in the terminal.  
 Includes a score, hints, difficulty of words, and more.

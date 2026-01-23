@@ -1,6 +1,6 @@
 # Hangman Project
 
-A simple command-line classic Hangman game — built entirely in Python and played in the terminal.  
+A simple command-line classic Hangman game, built entirely in Python and played in the terminal.  
 Includes a score, hints, difficulty of words, and more.
 ## Features
 - **Random word selection** among a large collection of words in a text file

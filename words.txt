@@ -1,0 +1,177 @@
+apple | easy | A common red or green fruit
+banana | easy | A long yellow fruit
+mango | easy | A sweet tropical fruit
+grape | easy | A small fruit often used to make wine
+orange | easy | A citrus fruit rich in vitamin C
+pineapple | medium | A tropical fruit with spiky skin
+strawberry | medium | A red fruit with seeds on the outside
+blueberry | medium | A small blue-purple berry
+watermelon | medium | A large fruit with green rind and red flesh
+pomegranate | medium | A fruit filled with many red seeds
+persimmon | hard | A sweet orange fruit often eaten ripe
+dragonfruit | hard | A tropical fruit with bright pink skin
+cranberry | hard | A tart red berry often used in sauces
+carrot | easy | A long orange vegetable
+tomato | easy | Red vegetable often mistaken as a fruit
+cucumber | easy | A green vegetable often used in salads
+lettuce | easy | Leafy green used in salads
+spinach | easy | Dark green leafy vegetable rich in iron
+radish | easy | Small round root vegetable, usually red
+broccoli | medium | Green vegetable resembling a tiny tree
+cauliflower | medium | White vegetable similar to broccoli
+pumpkin | medium | Large orange vegetable used in pies
+zucchini | medium | Green summer squash
+eggplant | medium | Purple vegetable also called aubergine
+kohlrabi | hard | Bulbous vegetable with a taste similar to cabbage
+celeriac | hard | Root vegetable, knobby and earthy-tasting
+pizza | easy | A round cheesy delight
+burger | easy | Popular fast food with patty and bun
+sandwich | easy | Two slices of bread with filling
+pasta | easy | Italian dish, often with sauce
+fries | easy | Deep-fried potato sticks
+poutine | medium | Canadian dish of fries, gravy, and cheese curds
+dim sum | medium | Chinese small bite-sized dishes
+bibimbap | medium | Korean rice dish with assorted toppings
+pierogi | medium | Eastern European filled dumplings
+paella | medium | Spanish rice dish with seafood and saffron
+samosa | medium | A pyramid-like Indian fried snack
+bouillabaisse | hard | French seafood stew
+stroopwafel | hard | Dutch caramel-filled waffle cookie
+car | easy | A common road vehicle with four wheels
+bus | easy | Public transport that carries many passengers
+bike | easy | Two-wheeled pedal vehicle
+train | easy | Long vehicle running on rails
+rickshaw | medium | Small three-wheeled vehicle, common in Asia
+dirigible | hard | Large airship filled with gas
+pyramids | easy | Ancient structures in Egypt
+colosseum | medium | Ancient Roman amphitheater
+neuschwanstein | hard | Fairytale castle in Germany
+london | easy | Capital of the UK
+paris | easy | City of love in France
+tokyo | easy | Capital of Japan
+mumbai | easy | Financial capital of India
+delhi | easy | Capital of India
+sydney | easy | Harbour city in Australia
+dubai | easy | Famous city in UAE known for tall buildings
+bengaluru | medium | Silicon Valley of India
+barcelona | medium | Spanish city with Gaudi architecture
+amsterdam | medium | Dutch city famous for canals and bikes
+chicago | medium | US city known for deep-dish pizza and skyline
+hokkaido | hard | Northern-most Japanese prefecture
+vilnius | hard | Capital of Lithuania
+tiruchirappalli | hard | A city in Tamil Nadu
+dog | easy | Man’s best friend
+cat | easy | A common pet that purrs
+lion | easy | Known as the king of the jungle
+elephant | easy | Largest land mammal
+capybara | medium | Largest rodent in the world
+tarsier | medium | Tiny primate with huge eyes
+okapi | medium | African forest animal that looks like a zebra-giraffe mix
+aardvark | medium | African nocturnal insect-eater
+platypus | medium | Egg-laying mammal from Australia
+narwhal | medium | Arctic whale with a long tusk
+axolotl | hard | Rare aquatic salamander also called “Mexican walking fish”
+quokka | hard | Small Australian marsupial, very friendly
+pangolin | hard | Scaly mammal often called “the scaly anteater”
+saola | hard | Rare antelope-like animal from Southeast Asia
+chair | easy | Something you sit on
+table | easy | Flat surface for eating or working
+bed | easy | Where you sleep
+lamp | easy | Provides light in a room
+spoon | easy | Used for eating or stirring
+cup | easy | Holds liquids for drinking
+blender | medium | Electric appliance for mixing or pureeing
+toaster | medium | Appliance to brown bread
+ironing board | medium | Surface used to iron clothes
+humidifier | medium | Device that adds moisture to the air
+stool | medium | Small seat without back support
+wardrobe | medium | Furniture to store clothes
+nightstand | medium | Small table beside the bed
+ottoman | hard | Low upholstered seat or footrest
+chiffonier | hard | Tall chest of drawers
+ergometer | hard | Exercise device to measure work done
+google | easy | Search engine giant
+microsoft | easy | Creator of Windows OS
+amazon | easy | E-commerce and cloud computing giant
+facebook | easy | Social media platform now called Meta
+tesla | easy | Electric vehicle and energy company
+spotify | easy | Music streaming service
+adobe | easy | Known for Photoshop and Illustrator
+uber | easy | Ride-hailing service
+math | easy | Study of numbers and equations
+physics | easy | Study of matter and energy
+biology | easy | Study of living organisms
+history | easy | Study of past events
+geography | easy | Study of the Earth and its features
+criminology | medium | Study of crime, criminals, and societal laws
+ethnomusicology | medium | Study of music in its cultural context
+otorhinolaryngology | hard | Medical specialty focusing on the ear, nose, and throat
+silicovolcanoconiosis | hard | Lung disease from fine volcanic silica
+sesquipedaliophobia | hard | Fear of long words
+pyrrhonism | hard | Extreme scepticism or doubt about everything
+zeugma | hard | A figure of speech where one word governs two others differently
+wallet | easy | Holds money and cards
+keys | easy | Opens doors
+phone | easy | Device for calls and messages
+watch | easy | Tells time
+bag | easy | Used to carry items
+umbrella | easy | Keeps you dry in rain
+shoes | easy | Worn on feet
+glasses | easy | Corrects vision
+notebook | easy | Used for writing notes
+pen | easy | For writing on paper
+backpack | medium | Larger bag worn on shoulders
+thermos | medium | Keeps drinks hot or cold
+compass | medium | Device for finding directions
+binoculars | medium | Magnifies distant objects
+calculator | medium | Performs mathematical calculations
+flashlight | medium | Portable light source
+measuring tape | medium | Tool to measure lengths
+stapler | medium | Binds papers together
+magnifying glass | medium | Enlarges small objects
+headphones | medium | For listening to music privately
+astrolabe | hard | Ancient tool to solve astronomical problems
+quipu | hard | Ancient Incan knotted string recording device
+gimbal | hard | Pivoted support for rotation of objects
+barometer | hard | Measures atmospheric pressure
+sparrow | easy | Small common bird found in cities
+crow | easy | Black bird, often considered smart
+flamingo | medium | Pink bird standing on one leg
+peacock | medium | Colourful bird known for its tail feathers
+cassowary | hard | Large flightless bird from Australia
+shoebill | hard | Bird with a huge shoe-shaped beak
+kakapo | hard | Rare nocturnal parrot from New Zealand
+rain | easy | Water falling from clouds
+snow | easy | Frozen precipitation
+sunshine | easy | Direct sunlight
+wind | easy | Movement of air
+fog | easy | Low hanging mist
+aurora | medium | Natural light display near poles
+tornado | medium | Rotating column of air in storms
+earthquake | medium | Shaking of the ground
+chemistry | easy | Study of matter and reactions
+biology | easy | Study of living organisms
+geology | medium | Study of rocks and Earth's structure
+meteorology | medium | Study of weather and atmosphere
+cryogenics | hard | Study of very low temperatures
+astrobiology | hard | Study of life in space
+happiness | easy | Feeling of joy
+anger | easy | Feeling of strong displeasure
+sadness | easy | Feeling of sorrow
+envy | medium | Feeling of wanting what someone else has
+nostalgia | medium | Longing for the past
+guilt | medium | Feeling of responsibility for a mistake
+limerence | hard | Intense romantic infatuation
+anomie | hard | Feeling of social instability or normlessness
+ouagadougou | hard | Capital of Burkina Faso
+barcelona | medium | Important coastal city in Spain
+singapore | medium | Very prosperous city-state in Southeast Asia
+tijuana | medium | Border city in Mexico
+thiruvananthapuram | medium | Important city in Kerala
+jazz | medium | Genre of music
+quizzical | medium | Indicating puzzlement
+xylophone | medium | Musical instrument
+onomatopoeia | medium | Grammatical term for words representing sounds
+supercalifragilisticexpialidocious | hard | Mary Poppins
+hippopotomonstrosesquippedaliophobia | hard | Fear of long words
+xerox | medium | To photocopy

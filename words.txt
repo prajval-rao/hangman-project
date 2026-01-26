@@ -30,7 +30,6 @@ sandwich | easy | Two slices of bread with filling
 pasta | easy | Italian dish, often with sauce
 fries | easy | Deep-fried potato sticks
 poutine | medium | Canadian dish of fries, gravy, and cheese curds
-dim sum | medium | Chinese small bite-sized dishes
 bibimbap | medium | Korean rice dish with assorted toppings
 pierogi | medium | Eastern European filled dumplings
 paella | medium | Spanish rice dish with seafood and saffron
@@ -174,4 +173,5 @@ xylophone | medium | Musical instrument
 onomatopoeia | medium | Grammatical term for words representing sounds
 supercalifragilisticexpialidocious | hard | Mary Poppins
 hippopotomonstrosesquippedaliophobia | hard | Fear of long words
+
 xerox | medium | To photocopy

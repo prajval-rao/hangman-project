@@ -1,5 +1,6 @@
 # Hangman Project
 
+Built like an Arcade game!
 A simple command-line classic Hangman game, built entirely in Python and played in the terminal, using the basic principles of object-oriented programming. It is a word-guessing game, where each word has a difficulty level and a hint. Depending on the difficulty level, there are a number of "tries", or wrong guesses, and the user must guess all the letters of the word without running out of tries. If the user runs out of tries, they can purchase them if they can afford it, based on the currency of the game. This currency is the "score", which increases if the user guesses the word. You can also purchase a hint for each word using this score.
 
 ## Table of contents

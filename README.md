@@ -44,13 +44,10 @@ These are the primary features of the game:
 
 📁 Hangman
 
- ├── hangman.py [(program)](https://github.com/prajval-rao/hangman-project/blob/main/hangman.py)
- 
- ├── words.txt [(list of words)](https://github.com/prajval-rao/hangman-project/blob/main/words.txt)
- 
- ├── mp3 files, one for each method in the class Music()
- 
- └── Hangman.bat (optional, to start the program) [(.bat file)](https://github.com/prajval-rao/hangman-project/blob/main/Hangman.bat)
+- [hangman.py](https://github.com/prajval-rao/hangman-project/blob/main/hangman.py) – main program
+- [words.txt](https://github.com/prajval-rao/hangman-project/blob/main/words.txt) – word list
+- mp3 files – for Music() class methods
+- [Hangman.bat](https://github.com/prajval-rao/hangman-project/blob/main/Hangman.bat) – optional startup of program
 
 ## Game
 

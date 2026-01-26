@@ -43,9 +43,13 @@ These are the primary features of the game:
 ## Project Structure
 
 📁 Hangman
+
  ├── hangman.py [(program)](https://github.com/prajval-rao/hangman-project/blob/main/hangman.py)
+ 
  ├── words.txt [(list of words)](https://github.com/prajval-rao/hangman-project/blob/main/words.txt)
+ 
  ├── mp3 files, one for each method in the class Music()
+ 
  └── Hangman.bat (optional, to start the program) [(.bat file)](https://github.com/prajval-rao/hangman-project/blob/main/Hangman.bat)
 
 ## Game

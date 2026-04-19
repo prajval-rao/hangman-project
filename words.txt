@@ -81,7 +81,6 @@ spoon | easy | Used for eating or stirring
 cup | easy | Holds liquids for drinking
 blender | medium | Electric appliance for mixing or pureeing
 toaster | medium | Appliance to brown bread
-ironing board | medium | Surface used to iron clothes
 humidifier | medium | Device that adds moisture to the air
 stool | medium | Small seat without back support
 wardrobe | medium | Furniture to store clothes

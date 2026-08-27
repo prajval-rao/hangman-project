@@ -271,7 +271,7 @@ class Music:
         pygame.mixer.music.play()
         
 if __name__ == "__main__":
-    audio = Music("ROBLOX Music - Alice Deejay - Better Off Alone (Glejs Remix).mp3", "game-entrance.mp3", "warning.mp3", "hint-claim.mp3", 
+    audio = Music("Better Off Alone.mp3", "game-entrance.mp3", "warning.mp3", "hint-claim.mp3", 
                   "new-notification-026-380249.mp3", "mouse-click-405459.mp3", "wrong-47985.mp3", "level-win-6416.mp3", "lose-sfx-365579.mp3")
     game = Initialise("words.txt", audio)
     game.play()
